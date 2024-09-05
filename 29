@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Train{
+    private:
+        int trainnumber;
+        string route;
+        int departuretime;
+    public:
+        void set(int name, string r, int dep){
+            trainnumber=name;
+            route=r;
+            departuretime=dep;
+        }
+        
+        void get(){
+            cout<<trainnumber<<" "<<route<<" "<<departuretime;
+        }
+};
+
+
+int main(){
+    Train obj;
+    obj.set(4444, "merta to jodhpur", 6);
+    obj.get();
+    return 0;
+}
